@@ -57,6 +57,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="allClearTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LKO-v9-oj5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jv-gQ-qIA">
                                                 <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="114"/>
@@ -65,6 +68,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="backTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ByA-4A-Kek"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3E-UF-2WP">
                                                 <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="114"/>
@@ -73,6 +79,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="percentTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POa-w3-ioX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc5-85-APX">
                                                 <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="114"/>
@@ -81,6 +90,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="divideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mkE-rm-lSv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -118,6 +130,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="timesTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mIJ-c6-u40"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -155,6 +170,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="minusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUh-Ys-LnL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -192,6 +210,9 @@
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="plusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BrO-eP-MjJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -252,6 +273,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gcV-rw-sgy" secondAttribute="trailing" id="wlm-ux-cFZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calculatorResults" destination="kPL-QT-Xso" id="PEh-zP-EtM"/>
+                        <outlet property="calculatorWorkings" destination="1Lo-Iw-eib" id="SvU-pA-i72"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
